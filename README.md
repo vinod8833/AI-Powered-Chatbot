@@ -20,50 +20,6 @@ This project is an AI-powered chatbot that helps users find information about pr
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/AI-Powered-Chatbot.git
-
-
-
-Backend
-Navigate to the backend folder and install Python dependencies:
-
-```
-cd backend
-```
-```
-pip install -r requirements.txt
+git clone https://github.com/vinod8833/AI-Powered-Chatbot.git
 ```
 
-# Frontend
-# For the frontend, navigate to the frontend folder and install JavaScript dependencies:
-
-```
-cd frontend
-```
-
-```
-npm install
-```
-
-3. Set Up Database
-Install MySQL and create a database called chatbot_db.
-Use the provided SQL schema to create tables (Products and Suppliers).
-Populate the tables with sample data.
-
-4. Run the Application
-Start the Backend Server
-
-```
-uvicorn app:app --reload
-```
-```
-Start the Frontend Server
-```
-
-```
-cd frontend
-```
-
-```
-npm start
-```
