@@ -23,3 +23,24 @@ This project is an AI-powered chatbot that helps users find information about pr
 git clone https://github.com/vinod8833/AI-Powered-Chatbot.git
 ```
 
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+```bash
+cd frontend
+npm install
+
+```
+
+```bash
+cd backend
+uvicorn app:app --reload
+
+```
+
+```bash
+cd frontend
+npm start
+```
