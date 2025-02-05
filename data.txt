@@ -1,0 +1,30 @@
+CREATE DATABASE db_name;
+
+USE db_name;
+
+CREATE TABLE suppliers (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  contact_info TEXT,
+  product_categories_offered TEXT
+);
+
+CREATE TABLE products (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  brand VARCHAR(50),
+  price DECIMAL(10,2),
+  category VARCHAR(50),
+  description TEXT,
+  supplier_id INT,
+  FOREIGN KEY (supplier_id) REFERENCES suppliers(id)
+);
+
+-- Insert sample data
+INSERT INTO suppliers (name, contact_info, product_categories_offered) VALUES 
+('Supplier A', '123-456-7890', 'Laptops, Phones'),
+('Supplier B', '987-654-3210', 'Phones, Tablets');
+
+INSERT INTO products (name, brand, price, category, description, supplier_id) VALUES 
+('Laptop A', 'Brand X', 1000.00, 'Laptops', 'A powerful laptop', 1),
+('Phone B', 'Brand Y', 500.00, 'Phones', 'An affordable phone', 2);

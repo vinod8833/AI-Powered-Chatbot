@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+langgraph
+pymysql
+sqlalchemy
+huggingface_hub
